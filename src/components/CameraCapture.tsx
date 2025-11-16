@@ -77,7 +77,7 @@ export const CameraCapture = ({ onCapture, isAnalyzing }: CameraCaptureProps) =>
           disabled={isAnalyzing}
           className="relative w-full aspect-square rounded-2xl overflow-hidden transition-all duration-300 flex flex-col items-center justify-center gap-4 shadow-[var(--shadow-soft)] disabled:opacity-50 disabled:cursor-not-allowed group"
           style={{
-            backgroundImage: `linear-gradient(rgba(46, 82, 102, 0.7), rgba(46, 82, 102, 0.85)), url(${lakeBackground})`,
+            backgroundImage: `url(${lakeBackground})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
