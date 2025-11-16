@@ -116,7 +116,24 @@ const Index = () => {
 
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p>Perfect for both novice and experienced fly fishers</p>
+          <p className="mb-4">Perfect for both novice and experienced fly fishers</p>
+        </div>
+        
+        {/* Copyright */}
+        <div className="mt-8 pb-6 border-t border-border/50 pt-6 flex flex-col items-center gap-3">
+          <div className="flex items-center gap-2">
+            <div className="text-center">
+              <div className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                genesoft
+              </div>
+              <div className="text-xs text-muted-foreground font-mono">
+                AI_Powered_by_AI_
+              </div>
+            </div>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Genesoft Ltd. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
