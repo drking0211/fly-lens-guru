@@ -1,0 +1,4 @@
+project_id = "plxcnyzyztuuxfitvdgk"
+
+[functions.identify-fly]
+verify_jwt = false
