@@ -115,18 +115,13 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p className="mb-4">Perfect for both novice and experienced fly fishers</p>
-        </div>
-        
-        {/* Copyright */}
-        <div className="mt-8 pb-6 border-t border-border/50 pt-6 flex flex-col items-center gap-3">
+        <div className="mt-8 pb-4 border-t border-border/50 pt-4 flex flex-col items-center gap-2">
           <div className="flex items-center gap-2">
             <div className="text-center">
-              <div className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <div className="font-bold text-base bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 genesoft
               </div>
-              <div className="text-xs text-muted-foreground font-mono">
+              <div className="text-[10px] text-muted-foreground font-mono leading-tight">
                 AI_Powered_by_AI_
               </div>
             </div>
