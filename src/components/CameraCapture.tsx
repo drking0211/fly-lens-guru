@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Camera, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import lakeBackground from "@/assets/lake-background.jpg";
 
 interface CameraCaptureProps {
   onCapture: (imageData: string) => void;
@@ -74,10 +75,15 @@ export const CameraCapture = ({ onCapture, isAnalyzing }: CameraCaptureProps) =>
         <button
           onClick={handleCameraClick}
           disabled={isAnalyzing}
-          className="w-full aspect-square rounded-2xl bg-gradient-to-br from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 flex flex-col items-center justify-center gap-4 shadow-[var(--shadow-soft)] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="relative w-full aspect-square rounded-2xl overflow-hidden transition-all duration-300 flex flex-col items-center justify-center gap-4 shadow-[var(--shadow-soft)] disabled:opacity-50 disabled:cursor-not-allowed group"
+          style={{
+            backgroundImage: `linear-gradient(rgba(46, 82, 102, 0.7), rgba(46, 82, 102, 0.85)), url(${lakeBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
         >
-          <Camera className="w-20 h-20 text-primary-foreground" />
-          <span className="text-xl font-semibold text-primary-foreground">
+          <Camera className="w-20 h-20 text-white drop-shadow-lg group-hover:scale-110 transition-transform" />
+          <span className="text-xl font-semibold text-white drop-shadow-lg">
             Capture Fly
           </span>
         </button>
