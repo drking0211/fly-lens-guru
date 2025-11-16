@@ -7,6 +7,14 @@ const config: CapacitorConfig = {
   server: {
     url: 'https://278c8355-98b9-4f72-8381-b11310d62a79.lovableproject.com?forceHideBadge=true',
     cleartext: true
+  },
+  ios: {
+    contentInset: 'always'
+  },
+  plugins: {
+    Camera: {
+      NSCameraUsageDescription: 'This app requires camera access to capture photos of flies for identification.'
+    }
   }
 };
 
